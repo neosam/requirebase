@@ -13,7 +13,7 @@ define([
         $('body').append(input.getContainer());
         var dummyformCode = $(require('text!templates/dummyform.html'));
         $('body').append(dummyformCode);
-        var dummyform = Neoforms.changeInputNeoinput('input', dummyformCode);
+        var dummyform = Neoforms.infectForm('input', dummyformCode);
         console.log(dummyform);
         dummyform.forename.setChangeFunction(function(value) {
             console.log("Changed forename to " + value);
