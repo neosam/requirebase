@@ -1,4 +1,7 @@
-define(["neoforms"], function(Neoforms){
-    input = a.newInput();
-    console.log(input)
+define(['jquery', "neoforms"], function($, Neoforms){
+    return function() {
+        input = Neoforms.newInput();
+        console.log(input)
+        $('body').append(input.getContainer());
+    }
 });
