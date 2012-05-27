@@ -2,9 +2,14 @@ define([
         'jquery',
         'underscore',
         "neoforms",
-        'text!templates/dummyform.html'
-], function($, _, Neoforms){
+        'neotools',
+        'text!templates/dummyform.html',
+        'text!templates/design.css'
+], function($, _, Neoforms, Neotools){
     return function() {
+        var style = require('text!templates/design.css');
+        Neotools.css.addCSS(style);
+
         input = Neoforms.newInput();
         input.setChangeFunction(function(value) {
             console.log(value);

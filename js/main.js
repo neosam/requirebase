@@ -1,7 +1,9 @@
 require.config({
     packages: [
         { name: 'neoforms'
-        , location: 'libs/neoforms' }
+        , location: 'libs/neoforms' },
+        { name: 'neotools'
+        , location: 'libs/neotools' }
     ],
 
     paths: {
