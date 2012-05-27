@@ -1,3 +1,6 @@
 [submodule "js/libs/neoforms"]
 	path = js/libs/neoforms
 	url = git@github.com:neosam/neoforms.git
+[submodule "js/libs/neotools"]
+	path = js/libs/neotools
+	url = git@github.com:neosam/neotools.git
