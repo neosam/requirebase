@@ -1,3 +1,10 @@
 .neoinput, .neoinput input {
     color: #4444ff;
 }
+
+.neoinput span {
+    display: inline-block;
+    min-width: 1em;
+    min-height: .5em;
+    border-bottom: solid 1px #4444ff;
+}
